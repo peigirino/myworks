@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="timeing()">time start</button>
+    <div id="SSS"></div>
+    <script>
+        var oBody = document.getElementById("SSS")
+        var i = 0;
+        var count = 0;
+        var s
+        function timeing(){updateNum();count++;if(count % 2 == 1){s = setInterval(updateNum, 1000);}else{clearInterval(s);}}
+        function updateNum(){var j = i++; oBody.innerHTML = "Time passed:"+"<span>"+j+"</span>"+"s";}
+    </script>
+</body>
+</html>
