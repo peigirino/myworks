@@ -1,0 +1,292 @@
+./* Reset styles */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+}
+
+/* Typography */
+body,
+input,
+textarea,
+select {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #333333;
+}
+#wrapper:hover #sidebar {
+                left: 0; /* 鼠标悬停时将侧边栏显示在屏幕左侧 */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #222222;
+	font-weight: 600;
+}
+
+p {
+	margin: 0 0 1.5em 0;
+}
+
+/* Layout */
+#main {
+	padding: 4em 0;
+}
+
+/* Header */
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.5em 0;
+	background-color: #ffffff;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	z-index: 999;
+}
+
+#header .logo {
+	display: inline-block;
+	font-size: 1.5em;
+	color: #222222;
+	text-decoration: none;
+}
+
+#header .icons {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#header .icons li {
+	display: inline-block;
+	margin-left: 1em;
+}
+
+#header .icons li a {
+	display: block;
+	font-size: 1.2em;
+	color: #999999;
+}
+
+/* Banner */
+#banner {
+	position: relative;
+	padding: 6em 0;
+	background-color: #f7f7f7;
+	text-align: center;
+}
+
+#banner .content {
+	max-width: 60em;
+	margin: 0 auto;
+}
+
+#banner h1 {
+	font-size: 3em;
+	color: #222222;
+	margin-bottom: 1em;
+}
+
+#banner p {
+	color: #666666;
+	margin-bottom: 2em;
+}
+
+#banner .button {
+	padding: 0.8em 2.5em;
+	font-size: 1em;
+	border-radius: 2em;
+	background-color: #4db6ac;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* Features */
+.features {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 4em 0;
+}
+
+.features article {
+	flex: 0 0 50%;
+}
+
+.features article .content {
+	padding: 2em;
+	background-color: #ffffff;
+}
+
+.features article h3 {
+	font-size: 1.8em;
+	color: #222222;
+	margin-bottom: 1em;
+}
+
+.features article p {
+	color: #666666;
+	margin-bottom: 1.5em;
+}
+
+/* Goods */
+.posts {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 4em 0;
+}
+
+.posts article {
+	flex: 0 0 50%;
+}
+
+.posts article .image {
+	display: block;
+	position: relative;
+}
+
+.posts article .image img {
+	width: 100%;
+	border-radius: 6px;
+}
+
+.posts article h3 {
+	font-size: 1.5em;
+	color: #222222;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+}
+
+.posts article p {
+	color: #666666;
+	margin-bottom: 1.5em;
+}
+
+.posts article .button {
+	padding: 0.6em 2em;
+	font-size: 1em;
+	border-radius: 2em;
+	background-color: #4db6ac;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* Sidebar */
+#sidebar {
+                position: fixed;
+                top: 0;
+                left: -200px; /* 将侧边栏隐藏在屏幕左侧 */
+                width: 200px;
+                height: 100vh;
+                background-color: #fff;
+                transition: left 0.3s ease; /* 添加过渡效果 */
+}
+
+
+#sidebar .inner {
+	max-width: 20em;
+	margin: 0 auto;
+}
+
+#sidebar #search input {
+	width: 100%;
+	padding: 0.8em;
+	border: 1px solid #dddddd;
+	border-radius: 2em;
+}
+
+#sidebar #menu ul {
+	list-style: none;
+	padding: 0;
+	margin-bottom: 2em;
+}
+
+#sidebar #menu ul li {
+	margin-bottom: 1em;
+}
+
+#sidebar #menu ul li a {
+	display: block;
+	font-size: 1em;
+	color: #666666;
+	text-decoration: none;
+}
+
+#sidebar #menu ul li a:hover {
+	color: #222222;
+}
+
+#sidebar section header h2 {
+	font-size: 1.5em;
+	color: #222222;
+	margin-bottom: 1em;
+}
+
+#sidebar section p {
+	color: #666666;
+	margin-bottom: 1.5em;
+}
+
+#sidebar ul.contact {
+	list-style: none;
+	padding: 0;
+}
+
+#sidebar ul.contact li {
+	margin-bottom: 0.5em;
+}
+
+#sidebar ul.contact li a {
+	color: #666666;
+	text-decoration: none;
+}
+
+/* Footer */
+#footer {
+	padding: 2em 0;
+	text-align: center;
+	color: #666666;
+	background-color: #f7f7f7;
+}
+
+#footer p {
+	margin-bottom: 0;
+}
+
+#footer a {
+	color: #666666;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #222222;
+}
